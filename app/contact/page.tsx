@@ -19,10 +19,10 @@ export default function Contact() {
                 I&apos;d love to hear from you! Whether you have a project to discuss, want to collaborate, or just want to say hello, don’t hesitate to get in touch.
             </p>
 
-            <div className="p-10 rounded-2xl bg-base-100 backdrop-blur-xl border border-base-300 shadow-2xl shadow-black/40 space-y-4 transform hover:-translate-y-2 hover:shadow-[0_40px_80px_-20px_rgba(0,0,0,0.7)] transition-all duration-300">
+            <div className="p-10 rounded-2xl bg-base-100 backdrop-blur-xl border border-base-300 shadow-2xl shadow-black/40 space-y-4 transform hover:-translate-y-2 hover:shadow-[0_40px_80px_-20px_rgba(0,0,0,0.7)] transition-[transform,translate,box-shadow]">
                 {links.map((l, i) => (
                     <p key={i}>
-                        <strong>{l.title}:</strong> <a href={l.link} className="link link-primary transition-colors" target="_blank">{l.content}</a>
+                        <strong>{l.title}:</strong> <a href={l.link} className="link link-primary transition-[color]" target="_blank">{l.content}</a>
                     </p>
                 ))}
             </div>
