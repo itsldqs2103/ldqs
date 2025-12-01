@@ -20,7 +20,7 @@ export default function Projects() {
             <h1 className="text-5xl font-bold text-center mb-10 drop-shadow-xl">Projects</h1>
 
             {projects.length === 0 ? (
-                <div className="text-center p-10 rounded-2xl bg-base-100 backdrop-blur-xl border border-base-300 shadow-2xl shadow-black/40 hover:-translate-y-2 hover:shadow-[0_40px_80px_-20px_rgba(0,0,0,0.7)] transition-[transform,translate,box-shadow]">
+                <div className="text-center p-10 rounded-2xl bg-base-100 backdrop-blur-xl border border-base-300 shadow-2xl shadow-black/40 hover:shadow-[0_40px_80px_-20px_rgba(0,0,0,0.7)] transition-shadow">
                     <h2 className="text-3xl font-semibold mb-3">No Projects Found</h2>
                     <p className="opacity-80">There are currently no projects to display. Please check back later.</p>
                 </div>
@@ -29,7 +29,7 @@ export default function Projects() {
                     {projects.map((p, i) => (
                         <div
                             key={i}
-                            className="p-8 rounded-2xl bg-base-100 backdrop-blur-xl border border-base-300 shadow-2xl shadow-black/40 hover:-translate-y-2 hover:shadow-[0_40px_80px_-20px_rgba(0,0,0,0.7)] transition-[transform,translate,box-shadow]"
+                            className="p-8 rounded-2xl bg-base-100 backdrop-blur-xl border border-base-300 shadow-2xl shadow-black/40 hover:shadow-[0_40px_80px_-20px_rgba(0,0,0,0.7)] transition-shadow"
                         >
                             <span
                                 className={`inline-block px-3 py-1 rounded-full text-sm font-semibold mb-3 ${p.status === "Completed"
