@@ -26,7 +26,7 @@ export default function RootLayout({
   }, [pathname]);
 
   const linkClasses = (path: string) =>
-    `btn btn-ghost justify-start text-lg transition-[transform,translate] hover:translate-x-2 inline-flex items-center gap-2
+    `btn btn-ghost justify-start text-lg transition-[transform,translate] hover:translate-x-2 inline-flex items-center gap-1
      ${pathname === path ? "bg-base-300 font-semibold translate-x-2" : ""}`;
 
   return (
