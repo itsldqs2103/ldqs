@@ -1,6 +1,6 @@
 "use client"
 
-import { Outfit } from "next/font/google";
+import { Manrope } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
 import Image from "next/image";
@@ -8,7 +8,7 @@ import { Contact, Copyright, Folder, House, MenuIcon, Moon, Sun, User } from "lu
 import { usePathname } from "next/navigation";
 import { useEffect } from "react";
 
-const outfit = Outfit({
+const manrope = Manrope({
   subsets: ["latin"],
 });
 
@@ -30,7 +30,7 @@ export default function RootLayout({
      ${pathname === path ? "bg-base-300 font-semibold translate-x-2" : ""}`;
 
   return (
-    <html lang="en" className={`${outfit.className} antialiased`}>
+    <html lang="en" className={`${manrope.className} antialiased`}>
       <body className="min-h-screen bg-base-200">
         <div className="drawer lg:drawer-open">
           <input id="sidebar-toggle" type="checkbox" className="drawer-toggle" />
@@ -56,7 +56,7 @@ export default function RootLayout({
                 <Copyright className="h-4 w-4" /> 2025 ldqs. All rights reserved
               </div>
               <div>
-                Powered with <a href="https://nextjs.org/" className="link link-primary transition-[color]" target="_blank">Next.js</a> by <a href="https://vercel.app/" className="link link-primary transition-[color]" target="_blank">Vercel</a>
+                Powered with <a href="https://nextjs.org/" className="link link-primary transition-[color]" target="_blank">Next.js</a> by <a href="https://vercel.com/" className="link link-primary transition-[color]" target="_blank">Vercel</a>
               </div>
             </footer>
           </div>
