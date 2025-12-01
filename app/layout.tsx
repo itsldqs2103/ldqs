@@ -51,6 +51,9 @@ export default function RootLayout({
               </label>
             </div>
             {children}
+            <footer className="mt-14 rounded-2xl p-4 bg-base-100 border border-base-300 text-center shadow-2xl shadow-black/40">
+              Powered by <a href="https://nextjs.org/" className="link link-primary transition-[color]" target="_blank">Next.js</a>
+            </footer>
           </div>
 
           <div className="drawer-side shadow-2xl shadow-black/40">
@@ -83,10 +86,6 @@ export default function RootLayout({
                   <Contact /> Contact
                 </Link>
               </nav>
-
-              <footer className="mt-auto text-center">
-                Powered by <a href="https://nextjs.org/" className="link link-primary transition-[color]" target="_blank">Next.js</a>
-              </footer>
             </aside>
           </div>
         </div>
