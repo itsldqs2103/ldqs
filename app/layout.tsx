@@ -1,8 +1,11 @@
+"use client"
+
 import { Outfit } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
 import Image from "next/image";
 import { Contact, Folder, House, MenuIcon, Moon, Sun, User } from "lucide-react";
+import { usePathname } from "next/navigation";
 
 const outfit = Outfit({
   subsets: ["latin"],
@@ -13,6 +16,13 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+  const pathname = usePathname();
+
+  const linkClasses = (path: string) =>
+    `btn btn-ghost justify-start text-lg transition-[transform,translate] hover:translate-x-2
+     ${pathname === path ? "bg-base-300 font-semibold translate-x-2" : ""}`;
+
   return (
     <html lang="en" className={`${outfit.className} antialiased`}>
       <body className="min-h-screen bg-base-200">
@@ -51,10 +61,21 @@ export default function RootLayout({
               </div>
 
               <nav className="flex flex-col gap-2">
-                <Link href="/" className="btn btn-ghost justify-start text-lg hover:translate-x-2 transition-[transform,translate]"><House /> Home</Link>
-                <Link href="/aboutme" className="btn btn-ghost justify-start text-lg hover:translate-x-2 transition-[transform,translate]"><User /> About Me</Link>
-                <Link href="/projects" className="btn btn-ghost justify-start text-lg hover:translate-x-2 transition-[transform,translate]"><Folder /> Projects</Link>
-                <Link href="/contact" className="btn btn-ghost justify-start text-lg hover:translate-x-2 transition-[transform,translate]"><Contact /> Contact</Link>
+                <Link href="/" className={linkClasses("/")}>
+                  <House /> Home
+                </Link>
+
+                <Link href="/aboutme" className={linkClasses("/aboutme")}>
+                  <User /> About Me
+                </Link>
+
+                <Link href="/projects" className={linkClasses("/projects")}>
+                  <Folder /> Projects
+                </Link>
+
+                <Link href="/contact" className={linkClasses("/contact")}>
+                  <Contact /> Contact
+                </Link>
               </nav>
 
               <footer className="mt-auto text-center">
