@@ -27,14 +27,14 @@ export default function About() {
         <div className="max-w-4xl mx-auto space-y-14">
             <h1 className="text-5xl font-bold text-center drop-shadow-xl">About Me</h1>
 
-            <div className="p-10 rounded-2xl bg-base-100 backdrop-blur-xl border border-base-300 shadow-2xl shadow-black/40 transform hover:-translate-y-2 hover:shadow-[0_40px_80px_-20px_rgba(0,0,0,0.7)] transition-[transform,translate,box-shadow]">
+            <div className="p-10 rounded-2xl bg-base-100 backdrop-blur-xl border border-base-300 shadow-2xl shadow-black/40">
                 <h2 className="text-3xl font-semibold mb-3 text-primary">Who I Am</h2>
                 <p className="opacity-80 leading-relaxed text-lg">
                     I&apos;m <strong>Quang Sang Le Do</strong>, a full-stack web developer passionate about crafting modern, responsive websites. I specialize in building intuitive interfaces with <strong>Next.js</strong> and creating robust backend systems using <strong>Laravel</strong>, delivering seamless and engaging digital experiences.
                 </p>
             </div>
 
-            <div className="p-10 rounded-2xl bg-base-100 backdrop-blur-xl border border-base-300 shadow-2xl shadow-black/40 transform hover:-translate-y-2 hover:shadow-[0_40px_80px_-20px_rgba(0,0,0,0.7)] transition-[transform,translate,box-shadow]">
+            <div className="p-10 rounded-2xl bg-base-100 backdrop-blur-xl border border-base-300 shadow-2xl shadow-black/40">
                 <h2 className="text-3xl font-semibold mb-6 text-primary">Education</h2>
                 <div className="space-y-4">
                     {education.map((edu, i) => (
@@ -47,7 +47,7 @@ export default function About() {
                 </div>
             </div>
 
-            <div className="p-10 rounded-2xl bg-base-100 backdrop-blur-xl border border-base-300 shadow-2xl shadow-black/40 transform hover:-translate-y-2 hover:shadow-[0_40px_80px_-20px_rgba(0,0,0,0.7)] transition-[transform,translate,box-shadow]">
+            <div className="p-10 rounded-2xl bg-base-100 backdrop-blur-xl border border-base-300 shadow-2xl shadow-black/40">
                 <h2 className="text-3xl font-semibold mb-6 text-primary">Skills</h2>
                 <div className="space-y-6">
                     {skills.map((skill, i) => (
