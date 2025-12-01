@@ -74,7 +74,7 @@ export default function RootLayout({
                 <p className="opacity-70 text-sm">Full-Stack Web Developer</p>
               </div>
 
-              <nav className="flex flex-col gap-2">
+              <nav className="flex flex-col gap-1">
                 <Link href="/" className={linkClasses("/")}>
                   <House />Home
                 </Link>
