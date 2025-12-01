@@ -26,7 +26,7 @@ export default function RootLayout({
   }, [pathname]);
 
   const linkClasses = (path: string) =>
-    `btn btn-ghost justify-start text-lg transition-[transform,translate] hover:translate-x-2
+    `btn btn-ghost justify-start text-lg transition-[transform,translate] hover:translate-x-2 inline-flex items-center gap-2
      ${pathname === path ? "bg-base-300 font-semibold translate-x-2" : ""}`;
 
   return (
@@ -53,7 +53,7 @@ export default function RootLayout({
             {children}
             <footer className="mt-14 rounded-2xl p-4 flex justify-between bg-base-100 border border-base-300 text-center shadow-2xl shadow-black/40">
               <div className="inline-flex items-center gap-1">
-                <Copyright className="h-4 w-4" /> 2025 ldqs. All rights reserved
+                <Copyright className="h-4 w-4" />2025 ldqs. All rights reserved
               </div>
               <div>
                 Powered with <a href="https://nextjs.org/" className="link link-primary transition-[color]" target="_blank">Next.js</a> by <a href="https://vercel.com/" className="link link-primary transition-[color]" target="_blank">Vercel</a>
@@ -76,19 +76,19 @@ export default function RootLayout({
 
               <nav className="flex flex-col gap-2">
                 <Link href="/" className={linkClasses("/")}>
-                  <House /> Home
+                  <House />Home
                 </Link>
 
                 <Link href="/aboutme" className={linkClasses("/aboutme")}>
-                  <User /> About Me
+                  <User />About Me
                 </Link>
 
                 <Link href="/projects" className={linkClasses("/projects")}>
-                  <Folder /> Projects
+                  <Folder />Projects
                 </Link>
 
                 <Link href="/contact" className={linkClasses("/contact")}>
-                  <Contact /> Contact
+                  <Contact />Contact
                 </Link>
               </nav>
             </aside>
