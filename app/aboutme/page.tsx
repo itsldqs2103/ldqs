@@ -35,6 +35,19 @@ export default function About() {
             </div>
 
             <div className="p-10 rounded-2xl bg-base-100 backdrop-blur-xl border border-base-300 shadow-2xl shadow-black/40 transform hover:-translate-y-2 hover:shadow-[0_40px_80px_-20px_rgba(0,0,0,0.7)] transition-all duration-300">
+                <h2 className="text-3xl font-semibold mb-6">Education</h2>
+                <div className="space-y-4">
+                    {education.map((edu, i) => (
+                        <div key={i} className="flex flex-col md:flex-row md:justify-between">
+                            <span className="font-medium">{edu.degree}</span>
+                            <span className="opacity-70">{edu.school}</span>
+                            <span className="opacity-50">{edu.year}</span>
+                        </div>
+                    ))}
+                </div>
+            </div>
+
+            <div className="p-10 rounded-2xl bg-base-100 backdrop-blur-xl border border-base-300 shadow-2xl shadow-black/40 transform hover:-translate-y-2 hover:shadow-[0_40px_80px_-20px_rgba(0,0,0,0.7)] transition-all duration-300">
                 <h2 className="text-3xl font-semibold mb-6">Skills</h2>
                 <div className="space-y-6">
                     {skills.map((skill, i) => (
@@ -48,19 +61,6 @@ export default function About() {
                                 value={skill.level}
                                 max={100}
                             ></progress>
-                        </div>
-                    ))}
-                </div>
-            </div>
-
-            <div className="p-10 rounded-2xl bg-base-100 backdrop-blur-xl border border-base-300 shadow-2xl shadow-black/40 transform hover:-translate-y-2 hover:shadow-[0_40px_80px_-20px_rgba(0,0,0,0.7)] transition-all duration-300">
-                <h2 className="text-3xl font-semibold mb-6">Education</h2>
-                <div className="space-y-4">
-                    {education.map((edu, i) => (
-                        <div key={i} className="flex flex-col md:flex-row md:justify-between">
-                            <span className="font-medium">{edu.degree}</span>
-                            <span className="opacity-70">{edu.school}</span>
-                            <span className="opacity-50">{edu.year}</span>
                         </div>
                     ))}
                 </div>
