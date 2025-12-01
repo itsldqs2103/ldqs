@@ -6,6 +6,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Contact, Folder, House, MenuIcon, Moon, Sun, User } from "lucide-react";
 import { usePathname } from "next/navigation";
+import { useEffect } from "react";
 
 const outfit = Outfit({
   subsets: ["latin"],
@@ -18,6 +19,11 @@ export default function RootLayout({
 }>) {
 
   const pathname = usePathname();
+
+  useEffect(() => {
+    const toggle = document.getElementById("sidebar-toggle") as HTMLInputElement | null;
+    if (toggle) toggle.checked = false;
+  }, [pathname]);
 
   const linkClasses = (path: string) =>
     `btn btn-ghost justify-start text-lg transition-[transform,translate] hover:translate-x-2
