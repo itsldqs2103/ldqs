@@ -1,0 +1,10 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: dark --default, light;
+  exclude: properties;
+}
+
+html {
+  transition: color 300ms var(--default-transition-timing-function),
+    background-color 300ms var(--default-transition-timing-function);
+}
