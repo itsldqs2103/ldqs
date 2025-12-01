@@ -37,9 +37,9 @@ export default function RootLayout({
             {children}
           </div>
 
-          <div className="drawer-side">
+          <div className="drawer-side shadow-2xl shadow-black/40">
             <label htmlFor="sidebar-toggle" aria-label="close sidebar" className="drawer-overlay"></label>
-            <aside className="w-72 bg-base-100 shadow-xl border-r border-base-300 p-6 flex flex-col gap-8 min-h-full">
+            <aside className="w-72 bg-base-100 shadow-2xl shadow-black/40 border-r border-base-300 p-6 flex flex-col gap-8 min-h-full">
               <div className="text-center">
                 <div className="avatar mb-5">
                   <div className="w-28 rounded-full shadow-xl ring-3 ring-primary ring-offset-base-100">
