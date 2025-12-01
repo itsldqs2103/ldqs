@@ -39,15 +39,15 @@ export default function RootLayout({
             <div className="flex justify-between items-center lg:block lg:text-end mb-14">
 
               <label htmlFor="sidebar-toggle" className="swap lg:hidden">
-                <MenuIcon className="h-6 w-6" />
+                <MenuIcon className="h-8 w-8" />
               </label>
 
               <label className="swap swap-rotate">
                 <input type="checkbox" className="theme-controller" value="light" />
 
-                <Sun className="swap-on h-6 w-6" />
+                <Sun className="swap-on h-8 w-8" />
 
-                <Moon className="swap-off h-6 w-6" />
+                <Moon className="swap-off h-8 w-8" />
               </label>
             </div>
             {children}
