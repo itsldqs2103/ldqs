@@ -53,7 +53,7 @@ export default function RootLayout({
               <div className="text-center">
                 <div className="avatar mb-5">
                   <div className="w-28 rounded-full shadow-xl ring-3 ring-primary ring-offset-base-100 ring-offset-3">
-                    <Image src="/ldqs.jpg" width={256} height={256} alt="ldqs's avatar" className="hover:scale-115 transition-[scale]" />
+                    <Image src="/ldqs.jpg" width={256} height={256} alt="ldqs's avatar" className="hover:scale-110 transition-[scale]" />
                   </div>
                 </div>
                 <h1 className="text-2xl font-bold">Quang Sang Le Do</h1>
