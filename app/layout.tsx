@@ -42,7 +42,7 @@ export default function RootLayout({
             <aside className="w-72 bg-base-100 shadow-2xl shadow-black/40 border-r border-base-300 p-6 flex flex-col gap-8 min-h-full">
               <div className="text-center">
                 <div className="avatar mb-5">
-                  <div className="w-28 rounded-full shadow-xl ring-3 ring-primary ring-offset-base-100">
+                  <div className="w-28 rounded-full shadow-xl ring-3 ring-primary ring-offset-base-100 ring-offset-3">
                     <Image src="/ldqs.png" width={256} height={256} alt="ldqs's avatar" className="hover:scale-115 transition-transform duration-300" />
                   </div>
                 </div>
