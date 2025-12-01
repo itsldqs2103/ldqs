@@ -4,7 +4,7 @@ import { Outfit } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
 import Image from "next/image";
-import { Contact, Folder, House, MenuIcon, Moon, Sun, User } from "lucide-react";
+import { Contact, Copyright, Folder, House, MenuIcon, Moon, Sun, User } from "lucide-react";
 import { usePathname } from "next/navigation";
 import { useEffect } from "react";
 
@@ -51,8 +51,13 @@ export default function RootLayout({
               </label>
             </div>
             {children}
-            <footer className="mt-14 rounded-2xl p-4 bg-base-100 border border-base-300 text-center shadow-2xl shadow-black/40">
-              Powered by <a href="https://nextjs.org/" className="link link-primary transition-[color]" target="_blank">Next.js</a>
+            <footer className="mt-14 rounded-2xl p-4 flex justify-between bg-base-100 border border-base-300 text-center shadow-2xl shadow-black/40">
+              <div className="inline-flex items-center gap-1">
+                <Copyright className="h-4 w-4" /> 2025 ldqs. All rights reserved
+              </div>
+              <div>
+                Powered with <a href="https://nextjs.org/" className="link link-primary transition-[color]" target="_blank">Next.js</a> by <a href="https://vercel.app/" className="link link-primary transition-[color]" target="_blank">Vercel</a>
+              </div>
             </footer>
           </div>
 
