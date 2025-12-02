@@ -31,7 +31,7 @@ export default function Home() {
             <Link
               key={i}
               href={item.link}
-              className="p-8 text-center rounded-2xl bg-base-100 backdrop-blur-xl border border-base-300 shadow-2xl shadow-black/40 hover:shadow-[0_40px_80px_-20px_rgba(0,0,0,0.7)] transition-shadow"
+              className="p-6 text-center rounded-2xl bg-base-100 backdrop-blur-xl border border-base-300 shadow-2xl shadow-black/40 hover:shadow-[0_40px_80px_-20px_rgba(0,0,0,0.7)] transition-shadow"
             >
               <div className="flex flex-col items-center gap-3">
                 <Icon className="h-8 w-8 text-primary" />
